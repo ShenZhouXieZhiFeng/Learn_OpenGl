@@ -1,5 +1,4 @@
 ﻿  main.cpp
 LINK : warning LNK4098: 默认库“MSVCRT”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
-main.obj : error LNK2019: 无法解析的外部符号 gladLoadGLLoader，该符号在函数 main 中被引用
-main.obj : error LNK2001: 无法解析的外部符号 glad_glViewport
-G:\Work\Project\Github\Learn_OpenGl\HelloOL\x64\Debug\HelloOL.exe : fatal error LNK1120: 2 个无法解析的外部命令
+  HelloOL.vcxproj -> E:\work\projects\Github\Learn_OpenGl\HelloOL\x64\Debug\HelloOL.exe
+  HelloOL.vcxproj -> E:\work\projects\Github\Learn_OpenGl\HelloOL\x64\Debug\HelloOL.pdb (Full PDB)
