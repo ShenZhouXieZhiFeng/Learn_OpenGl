@@ -5,10 +5,16 @@ using namespace std;
 
 void processInput(GLFWwindow *window);
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
+void showTriangle();
+
+float vertices[] = {
+	-0.5f, -0.5f, 0.0f,
+	0.5f, -0.5f, 0.0f,
+	0.0f, 0.5f, 0.0f
+};
 
 int main(int argc, char** argv)
 {
-	
 	glfwInit();
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
@@ -29,7 +35,7 @@ int main(int argc, char** argv)
 		std::cout << "Failed to initialize GLAD" << std::endl;
 		return -1;
 	}
-	glViewport(0, 0, 800, 600);
+	//glViewport(0, 0, 800, 600);
 	while (!glfwWindowShouldClose(window))
 	{
 		processInput(window);
@@ -51,5 +57,12 @@ void processInput(GLFWwindow *window)
 void framebuffer_size_callback(GLFWwindow* window, int width, int height)
 {
 	glViewport(0, 0, width, height);
+}
+
+
+
+void showTriangle()
+{
+
 }
 
