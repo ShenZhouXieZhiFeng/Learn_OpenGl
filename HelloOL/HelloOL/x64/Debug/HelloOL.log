@@ -1,3 +1,4 @@
 ﻿  main.cpp
-  HelloOL.vcxproj -> E:\work\projects\Github\Learn_OpenGl\HelloOL\x64\Debug\HelloOL.exe
-  HelloOL.vcxproj -> E:\work\projects\Github\Learn_OpenGl\HelloOL\x64\Debug\HelloOL.pdb (Full PDB)
+g:\work\project\github\learn_opengl\hellool\hellool\main.cpp(163): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+  HelloOL.vcxproj -> G:\Work\Project\Github\Learn_OpenGl\HelloOL\x64\Debug\HelloOL.exe
+  HelloOL.vcxproj -> G:\Work\Project\Github\Learn_OpenGl\HelloOL\x64\Debug\HelloOL.pdb (Full PDB)
