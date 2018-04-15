@@ -1,3 +1,5 @@
-﻿  main.cpp
+﻿  ShaderMain.cpp
+g:\work\project\github\learn_opengl\hellool\hellool\shader_s.h(52): warning C4101: “infoLog”: 未引用的局部变量
+g:\work\project\github\learn_opengl\hellool\hellool\shader_s.h(51): warning C4101: “success”: 未引用的局部变量
   HelloOL.vcxproj -> G:\Work\Project\Github\Learn_OpenGl\HelloOL\x64\Debug\HelloOL.exe
   HelloOL.vcxproj -> G:\Work\Project\Github\Learn_OpenGl\HelloOL\x64\Debug\HelloOL.pdb (Full PDB)

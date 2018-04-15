@@ -3,8 +3,8 @@
 #include <iostream>
 using namespace std;
 
-void processInput(GLFWwindow *window);
-void framebuffer_size_callback(GLFWwindow* window, int width, int height);
+void processInput1(GLFWwindow *window);
+void framebuffer_size_callback1(GLFWwindow* window, int width, int height);
 
 const unsigned int SCR_WIDTH = 800;
 const unsigned int SCR_HEIGHT = 600;
@@ -27,7 +27,7 @@ const char *fragmentShaderSource = "#version 330 core\n"
 "   FragColor = vec4(ourColor, 1.0f);\n"
 "}\n\0";
 
-int main()
+int main1()
 {
 	glfwInit();
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
@@ -42,7 +42,7 @@ int main()
 		return -1;
 	}
 	glfwMakeContextCurrent(window);
-	glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
+	glfwSetFramebufferSizeCallback(window, framebuffer_size_callback1);
 
 	if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
 	{
@@ -179,7 +179,7 @@ int main()
 	//glViewport(0, 0, SCR_WIDTH, SCR_HEIGHT);
 	while (!glfwWindowShouldClose(window))
 	{
-		processInput(window);
+		processInput1(window);
 		glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
 		glClear(GL_COLOR_BUFFER_BIT);
 
@@ -209,13 +209,13 @@ int main()
 	return 0;
 }
 
-void processInput(GLFWwindow *window)
+void processInput1(GLFWwindow *window)
 {
 	if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
 		glfwSetWindowShouldClose(window, true);
 }
 
-void framebuffer_size_callback(GLFWwindow* window, int width, int height)
+void framebuffer_size_callback1(GLFWwindow* window, int width, int height)
 {
 	glViewport(0, 0, width, height);
 }

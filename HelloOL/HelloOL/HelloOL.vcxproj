@@ -72,13 +72,13 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
     <ReferencePath>$(ReferencePath)</ReferencePath>
-    <IncludePath>G:\Work\Project\Github\Learn_OpenGl\HelloOL\HelloOL\include;$(IncludePath)</IncludePath>
+    <IncludePath>G:\Work\Project\Github\Learn_OpenGl\HelloOL\HelloOL;G:\Work\Project\Github\Learn_OpenGl\HelloOL\HelloOL\include;$(IncludePath)</IncludePath>
     <SourcePath>G:\Work\Project\Github\Learn_OpenGl\HelloOL\HelloOL\src;$(SourcePath)</SourcePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
     <ReferencePath>$(ReferencePath)</ReferencePath>
-    <IncludePath>G:\Work\Project\Github\Learn_OpenGl\HelloOL\HelloOL\include;$(IncludePath)</IncludePath>
+    <IncludePath>G:\Work\Project\Github\Learn_OpenGl\HelloOL\HelloOL;G:\Work\Project\Github\Learn_OpenGl\HelloOL\HelloOL\include;$(IncludePath)</IncludePath>
     <SourcePath>G:\Work\Project\Github\Learn_OpenGl\HelloOL\HelloOL\src;$(SourcePath)</SourcePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -156,7 +156,16 @@
   <ItemGroup>
     <ClCompile Include="display.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="ShaderMain.cpp" />
     <ClCompile Include="src\glad.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="shader_s.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="3.3.shader.vs" />
+    <None Include="3.3.shader.fs" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
