@@ -3,8 +3,10 @@
 #include <iostream>
 using namespace std;
 
-void processInput1(GLFWwindow *window);
-void framebuffer_size_callback1(GLFWwindow* window, int width, int height);
+void processInput(GLFWwindow *window);
+void framebuffer_size_callback(GLFWwindow* window, int width, int height);
+void helloShader();
+void helloTexture();
 
 const unsigned int SCR_WIDTH = 800;
 const unsigned int SCR_HEIGHT = 600;
@@ -27,7 +29,7 @@ const char *fragmentShaderSource = "#version 330 core\n"
 "   FragColor = vec4(ourColor, 1.0f);\n"
 "}\n\0";
 
-int main1()
+int main()
 {
 	glfwInit();
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
@@ -42,7 +44,7 @@ int main1()
 		return -1;
 	}
 	glfwMakeContextCurrent(window);
-	glfwSetFramebufferSizeCallback(window, framebuffer_size_callback1);
+	glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
 
 	if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
 	{
@@ -50,6 +52,32 @@ int main1()
 		return -1;
 	}
 
+	//helloShader(window);
+	helloTexture(window);
+
+	glfwTerminate();
+	return 0;
+}
+
+void processInput(GLFWwindow *window)
+{
+	if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
+		glfwSetWindowShouldClose(window, true);
+}
+
+void framebuffer_size_callback(GLFWwindow* window, int width, int height)
+{
+	glViewport(0, 0, width, height);
+}
+
+int helloTexture(GLFWwindow* window)
+{
+
+	return 0;
+}
+
+int helloShader(GLFWwindow* window)
+{
 	//创建一个顶点shader对象，初始化并编译
 	unsigned int vertexShader;
 	vertexShader = glCreateShader(GL_VERTEX_SHADER);
@@ -151,7 +179,7 @@ int main1()
 		-0.5f, -0.5f, 0.0f,  0.0f, 1.0f, 0.0f,  // bottom left
 		0.0f,  0.5f, 0.0f,  0.0f, 0.0f, 1.0f   // top 
 	};
-	unsigned int VBO,VAO;
+	unsigned int VBO, VAO;
 	glGenVertexArrays(1, &VAO);
 	glGenBuffers(1, &VBO);
 	glBindVertexArray(VAO);
@@ -179,7 +207,7 @@ int main1()
 	//glViewport(0, 0, SCR_WIDTH, SCR_HEIGHT);
 	while (!glfwWindowShouldClose(window))
 	{
-		processInput1(window);
+		processInput(window);
 		glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
 		glClear(GL_COLOR_BUFFER_BIT);
 
@@ -204,18 +232,4 @@ int main1()
 	glDeleteVertexArrays(1, &VAO);
 	glDeleteBuffers(1, &VBO);
 	//glDeleteBuffers(1, &EBO);
-
-	glfwTerminate();
-	return 0;
-}
-
-void processInput1(GLFWwindow *window)
-{
-	if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
-		glfwSetWindowShouldClose(window, true);
-}
-
-void framebuffer_size_callback1(GLFWwindow* window, int width, int height)
-{
-	glViewport(0, 0, width, height);
 }
