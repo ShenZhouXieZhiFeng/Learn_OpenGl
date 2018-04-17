@@ -18,3 +18,7 @@ HelloOL/HelloOL/x64/Debug/main.obj
 *.tlog
 *.lastbuildstate
 *.tlog
+HelloOL/HelloOL.VC.VC.opendb
+*.log
+HelloOL/HelloOL/x64/Debug/HelloOL.log
+HelloOL/HelloOL/x64/Debug/HelloOL.tlog/CL.write.1.tlog
