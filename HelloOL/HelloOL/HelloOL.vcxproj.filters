@@ -52,9 +52,18 @@
     <None Include="4.1.texture.vs">
       <Filter>资源文件</Filter>
     </None>
+    <None Include="4.2.texture.fs">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="4.2.texture.vs">
+      <Filter>资源文件</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Image Include="container.jpg">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="awesomeface.png">
       <Filter>资源文件</Filter>
     </Image>
   </ItemGroup>

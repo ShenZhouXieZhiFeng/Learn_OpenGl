@@ -1,5 +1,6 @@
 ﻿  main.cpp
 e:\work\projects\github\learn_opengl\hellool\hellool\shader_s.h(52): warning C4101: “infoLog”: 未引用的局部变量
 e:\work\projects\github\learn_opengl\hellool\hellool\shader_s.h(51): warning C4101: “success”: 未引用的局部变量
+LINK : warning LNK4098: 默认库“MSVCRT”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
   HelloOL.vcxproj -> E:\work\projects\Github\Learn_OpenGl\HelloOL\x64\Debug\HelloOL.exe
   HelloOL.vcxproj -> E:\work\projects\Github\Learn_OpenGl\HelloOL\x64\Debug\HelloOL.pdb (Full PDB)
