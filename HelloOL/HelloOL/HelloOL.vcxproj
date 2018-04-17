@@ -162,13 +162,16 @@
   <ItemGroup>
     <ClInclude Include="resource.h" />
     <ClInclude Include="shader_s.h" />
+    <ClInclude Include="stb_image.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="3.3.shader.vs" />
     <None Include="3.3.shader.fs" />
+    <None Include="4.1.texture.fs" />
+    <None Include="4.1.texture.vs" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="C:\Users\Administrator\Desktop\wall.jpg" />
+    <Image Include="container.jpg" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

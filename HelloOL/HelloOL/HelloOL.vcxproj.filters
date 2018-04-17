@@ -35,6 +35,9 @@
     <ClInclude Include="resource.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="stb_image.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="3.3.shader.vs">
@@ -43,9 +46,15 @@
     <None Include="3.3.shader.fs">
       <Filter>资源文件</Filter>
     </None>
+    <None Include="4.1.texture.fs">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="4.1.texture.vs">
+      <Filter>资源文件</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="C:\Users\Administrator\Desktop\wall.jpg">
+    <Image Include="container.jpg">
       <Filter>资源文件</Filter>
     </Image>
   </ItemGroup>
